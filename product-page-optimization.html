@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN Product Page Optimization | Max Lopez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-['Inter'] transition-colors duration-300">
+    
+    <custom-header></custom-header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Project Header -->
+        <section class="mb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">SHEIN Product Page Optimization</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300">Enhancing the consideration and conversion phases</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">UX Research</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">Product Design</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">A/B Testing</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-8">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <p class="font-medium">By Max Lopez</p>
+                        <p class="text-gray-600 dark:text-gray-300">GIT 435 – Prof. Hopkins</p>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">May 15, 2025</p>
+                </div>
+            </div>
+            <img src="/components/pics/thumbnail-2.png" alt="SHEIN product page" class="w-full rounded-xl shadow-lg mb-8">
+        </section>
+
+        <!-- Project Purpose -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Purpose of the Project</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <p class="mb-6">The primary objective was to improve the product page experience for shoppers — especially those who are trying to decide whether a product is worth buying.</p>
+                <p>The product page is where most users:</p>
+                <ul class="list-disc pl-6 space-y-2 mt-4">
+                    <li>Compare items</li>
+                    <li>Evaluate quality</li>
+                    <li>Check reviews</li>
+                    <li>Decide whether to commit</li>
+                </ul>
+                <p class="mt-4">My job was to analyze what SHEIN was already doing well as well as what was missing for users at critical decision-making moments.</p>
+            </div>
+        </section>
+
+        <!-- Current Strengths -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">What's Working on the Current Page</h2>
+            <div class="bg-green-50 dark:bg-green-900/20 rounded-xl p-8">
+                <p class="mb-6">SHEIN already has several strong elements on their product pages:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <p>Thorough product specifications</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <p>Prominent reviews and customer photos</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <p>Strong CTAs</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <p>Clear pricing and deals</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <p>Good product photography</p>
+                    </div>
+                </div>
+                <p class="mt-6">These are all solid UX components that support conversion — but they're incomplete.</p>
+            </div>
+        </section>
+
+        <!-- Identified Gaps -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">What's Missing (UX Diagnosis)</h2>
+            <div class="bg-red-50 dark:bg-red-900/20 rounded-xl p-8">
+                <h3 class="text-xl font-semibold mb-4">Missing in the consideration phase:</h3>
+                <ul class="list-disc pl-6 space-y-2 mb-6">
+                    <li>No product description</li>
+                    <li>No comparison info</li>
+                    <li>No FAQs</li>
+                    <li>No real-time support/help</li>
+                </ul>
+                
+                <h3 class="text-xl font-semibold mb-4">Missing in the conversion phase:</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>No urgency indicators</li>
+                    <li>Lack of reassurance (trust badges, clarity, etc.)</li>
+                    <li>No real-time popularity cues</li>
+                </ul>
+                
+                <p class="mt-6">These missing elements create hesitation — especially for a brand where customers often doubt quality, materials, sizing, or durability.</p>
+            </div>
+        </section>
+
+        <!-- Customer Needs Analysis -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Customer Needs Analysis</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Consideration Stage -->
+                <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <i data-feather="search" class="w-5 h-5"></i>
+                        Consideration Stage Needs
+                    </h3>
+                    <p class="mb-4">Users are researching and comparing. They need:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Honest product information</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Key features and benefits</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Sizing/materials/quality details</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Multiple visual confirmations</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Social proof</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                            <span>Easy comparisons</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4">These reduce uncertainty and keep them from bouncing.</p>
+                </div>
+                
+                <!-- Conversion Stage -->
+                <div class="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center gap-2">
+                        <i data-feather="shopping-cart" class="w-5 h-5"></i>
+                        Conversion Stage Needs
+                    </h3>
+                    <p class="mb-4">Users are deciding now or never. They need:</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Urgency (timers, low stock)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Reassurance (reviews, trust badges)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Seamless add-to-cart flow</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Minimal distractions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Clear return policy</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check-circle" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                            <span>Multiple payment options</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4">These push them across the finish line.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposed Solutions -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Proposed UX Improvements</h2>
+            
+            <!-- Solution 1 -->
+            <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Solution 1: Add Product Descriptions + FAQs + Comparison Features</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium mb-1">Problem</h4>
+                                <p>The product pages lacked basic context and comparison tools.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Solution</h4>
+                                <p>Added clear written descriptions, FAQs, and comparison info.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Impact</h4>
+                                <p>Builds trust, reduces research bounce, and decreases hesitation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-xs font-bold uppercase text-gray-500 text-center">Before</span>
+                            <img src="/components/pics/SHEIN-PICS/descrption_before.png "alt="Before: No description" class="w-full rounded-lg shadow-md border border-gray-200 dark:border-gray-700 cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <span class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400 text-center">After</span>
+                            <img src="/components/pics/SHEIN-PICS/descrption_after.jpg" alt="After: Detailed description & FAQs" class="w-full rounded-lg shadow-md border-2 border-blue-500 dark:border-blue-400 cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Solution 2 -->
+            <div class="bg-purple-50 dark:bg-purple-900/20 rounded-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-2xl font-bold mb-4">Solution 2: Add Real-Time Popularity Indicators</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium mb-1">Problem</h4>
+                                <p>Lack of urgency and social proof during decision-making.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Solution</h4>
+                                <p>Added real-time visitor metrics like "X people viewing this item".</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium mb-1">Impact</h4>
+                                <p>Creates urgency and reinforces social proof.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 order-1 md:order-2">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-xs font-bold uppercase text-gray-500 text-center">Before</span>
+                            <img src="/components/pics/SHEIN-PICS/engagement_before.png" alt="Before: Static page" class="w-full rounded-lg shadow-md border border-gray-200 dark:border-gray-700 cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <span class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400 text-center">After</span>
+                            <img src="/components/pics/SHEIN-PICS/engagement_after.jpg" alt="After: Real-time popularity cues" class="w-full rounded-lg shadow-md border-2 border-blue-500 dark:border-blue-400 cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mt-8">
+                <h3 class="text-xl font-semibold mb-4">Implementation Strategy</h3>
+                <p>Launch both changes together as they support both sides of the funnel — they're complementary and offer a smoother end-to-end user experience.</p>
+            </div>
+        </section>
+
+        <!-- A/B Testing -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">A/B Testing Strategy</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">For Consideration Elements:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                                <span>Time on page</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                                <span>Scroll depth</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                                <span>FAQ interactions</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                                <span>Bounce rate</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">For Conversion Elements:</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                                <span>Add-to-cart rate</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                                <span>Checkout completion rate</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i data-feather="bar-chart-2" class="w-5 h-5 text-purple-600 dark:text-purple-300 mt-1 flex-shrink-0"></i>
+                                <span>Abandonment rate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Visual Comparison Grid -->
+                <div class="mt-12 mb-8 bg-gray-100 dark:bg-gray-900/50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-6 text-center">Visual Prototype Comparison (A vs B)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="flex flex-col gap-2">
+                            <span class="text-sm font-bold uppercase text-gray-500 text-center">Control (Version A)</span>
+                            <img src="/components/pics/SHEIN-PICS/product_page.png" alt="Version A: Original design" class="w-full rounded-lg shadow-lg cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <span class="text-sm font-bold uppercase text-blue-600 dark:text-blue-400 text-center">Variant (Version B)</span>
+                            <img src="/components/pics/SHEIN-PICS/product_page after.jpg" alt="Version B: Optimized design" class="w-full rounded-lg shadow-lg border-2 border-blue-500 cursor-zoom-in" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <p><strong>Duration:</strong> 2–3 weeks to gather meaningful insights from SHEIN's high traffic.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expected Impact -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Expected Impact</h2>
+            <div class="bg-green-50 dark:bg-green-900/20 rounded-xl p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="trending-up" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-1">More time spent on product pages</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Engaged users are more likely to convert</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="trending-up" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-1">Increased add-to-cart rate</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Better information leads to more confident decisions</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="trending-up" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-1">Improved confidence from social proof</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Real-time indicators validate purchase decisions</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="bg-green-100 dark:bg-green-800 rounded-full p-2 flex-shrink-0">
+                            <i data-feather="trending-up" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-1">Reduced bounce and abandonment</h3>
+                            <p class="text-gray-600 dark:text-gray-300">Users stay and complete purchases</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-6">These are the exact types of outcomes stakeholders care about.</p>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <a href="/portfolio.html" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg font-medium transition-colors flex items-center gap-2">
+                <i data-feather="arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[2000] hidden bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors" aria-label="Close">
+            <i data-feather="x" class="w-8 h-8"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling while open
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    </script>
+</body>
+</html>

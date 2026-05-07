@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Delights AZ - UX Research Case Study | Max Lopez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Custom minimalist scrollbar for this page */
+        html { scroll-behavior: smooth; }
+        .research-card { transition: all 0.3s ease; }
+        .research-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); }
+        .finding-border { border-left: 4px solid #9333ea; }
+    </style>
+</head>
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-['Inter'] transition-colors duration-300 antialiased selection:bg-purple-100 dark:selection:bg-purple-900">
+    
+    <custom-header></custom-header>
+    
+    <main class="max-w-[1100px] mx-auto px-6 py-16 md:py-24">
+        
+        <!-- 1. Hero Section -->
+        <section class="mb-24">
+            <span class="inline-block py-1 px-3 rounded-full bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-semibold tracking-wide uppercase mb-6">🧠 UX Research–Forward Case Study</span>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-[1.1]">Reducing Decision Friction in Premium Online Catering</h1>
+            <p class="text-xl md:text-2xl text-gray-500 dark:text-gray-400 mb-10 font-light max-w-3xl">Research-Led Website Redesign for a Growing Local Catering Business</p>
+            
+            <!-- Quick Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-8 border-y border-gray-100 dark:border-gray-800">
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Role</span>
+                    <span class="font-semibold block">UX Researcher & Designer</span>
+                </div>
+                <div>
+                    <span class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Context</span>
+                    <span class="font-semibold block">Senior Capstone | Real Client</span>
+                </div>
+                <div class="col-span-2">
+                    <span class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Research Snapshot</span>
+                    <div class="flex flex-wrap gap-2 text-sm">
+                        <span class="bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-300">1 Stakeholder Interview</span>
+                        <span class="bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-300">~12 Customer Convos</span>
+                        <span class="bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-300">3 Competitive Audits</span>
+                        <span class="bg-gray-50 dark:bg-gray-800 px-2 py-1 rounded text-gray-600 dark:text-gray-300">3 Prototype Iterations</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800">
+                <img src="/components/pics/thumbnail-1.png" alt="Board Delights AZ Project Hero" class="w-full h-auto opacity-90 hover:opacity-100 transition-opacity">
+            </div>
+        </section>
+
+        <!-- 2. Context & Business Challenge -->
+        <section class="mb-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <!-- Left Column -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-2">Context</h3>
+                    <p class="text-xl font-bold mb-4">A local favorite scaling from social media to structured booking.</p>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 text-sm">
+                        Board Delights AZ is a local charcuterie caterer scaling for growth. As demand increased, the business needed to bridge the gap between social media interest and structured booking while elevating brand value.
+
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-5 rounded-lg border-l-4 border-purple-500">
+                        <p class="text-sm text-gray-600 dark:text-gray-400"><strong>Goal:</strong> Bridge the gap between social media interest and final booking.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <h3 class="text-lg font-bold uppercase tracking-wider text-red-500 dark:text-red-400 mb-2">The Problem</h3>
+                    <p class="text-xl font-bold mb-4">Users were ready to buy but couldn't quickly figure out how.</p>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 text-sm">Potential customers arrived with intent but encountered friction that stopped momentum. Instead of booking, users were forced to search or ask for clarification.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-sm">
+                            <p class="font-bold mb-1">Sticking Points:</p>
+                            <ul class="text-gray-500 list-disc pl-4 space-y-1">
+                                <li>Hidden pricing</li>
+                                <li>Unclear and poorly differentiated services</li>
+                                <li>Ambiguous paths or next steps</li>
+                            </ul>
+                        </div>
+                        <div class="text-sm">
+                            <p class="font-bold mb-1">Why it mattered:</p>
+                            <p class="text-gray-500 italic">Lower booking confidence and higher drop-off rates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Research Objectives -->
+        <section class="mb-24">
+            <div class="bg-gray-50 dark:bg-gray-900/50 rounded-2xl p-8 md:p-12">
+                <h2 class="text-2xl font-bold mb-8">Research Objectives</h2>
+                <p class="mb-8 text-gray-600 dark:text-gray-300 leading-relaxed">Research focused on four key friction points:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold">1</span>
+                        <p class="text-lg">What information helps users quickly assess value?</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold">2</span>
+                        <p class="text-lg">What reduces hesitation before committing?</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold">3</span>
+                        <p class="text-lg">How users judge quality and trust in a catering service?</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-600 dark:text-blue-300 font-bold">4</span>
+                        <p class="text-lg">What makes next steps clear and actionable?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Research Approach -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Research Approach & Constraints</h2>
+            
+            <div class="mb-10">
+                <ul class="space-y-2 text-sm">
+                    <li class="text-gray-600 dark:text-gray-300"><span class="font-bold text-purple-600 dark:text-purple-400">Business perspective</span> → What issues were recurring?</li>
+                    <li class="text-gray-600 dark:text-gray-300"><span class="font-bold text-purple-600 dark:text-purple-400">Customer behavior</span> → What were users actually asking and struggling with?</li>
+                    <li class="text-gray-600 dark:text-gray-300"><span class="font-bold text-purple-600 dark:text-purple-400">Experience evaluation</span> → Where did the interface create friction?</li>
+                </ul>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card A -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="user" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Stakeholder Interview</h3>
+                    <p class="text-sm text-gray-500 mb-4">Participant: Business Owner</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Purpose:</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Understand operational challenges, recurring customer questions, and brand positioning goals.</p>
+                    </div>
+                </div>
+
+                <!-- Card B -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="message-circle" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Customer Conversations</h3>
+                    <p class="text-sm text-gray-500 mb-4">Analysis of customer inquiries (Instagram DMs, In-person conversations & email threads)</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Identified/Revealed:</p>
+                        <ul class="text-sm text-gray-600 dark:text-gray-300 list-disc pl-4 space-y-1">
+                            <li>FAQ patterns</li>
+                            <li>Points of confusion</li>
+                            <li>Service comparison behaviors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card C -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="search" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Heuristic Evaluation</h3>
+                    <p class="text-sm text-gray-500 mb-4">System Visibility & Consistency</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Purpose:</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Identify structural friction and trust gaps (e.g., system status visibility, consistency standards).</p>
+                    </div>
+                </div>
+
+                <!-- Card D -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="bar-chart-2" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Competitive Audit</h3>
+                    <p class="text-sm text-gray-500 mb-4">3 Catering Sites Compared</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Compared:</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Established expectations for pricing visibility, service clarity, and booking flow</p>
+                    </div>
+                </div>
+
+                <!-- Card E -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="layout" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Iterative Prototype Testing</h3>
+                    <p class="text-sm text-gray-500 mb-4">3 Iterations</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Observed how users:</p>
+                        <ul class="text-sm text-gray-600 dark:text-gray-300 list-disc pl-4 space-y-1">
+                            <li>Found pricing</li>
+                            <li>Selected appropriate service</li>
+                            <li>Determined next steps</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card F -->
+                <div class="research-card bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 p-6 rounded-xl">
+                    <div class="text-purple-600 dark:text-purple-400 mb-4"><i data-feather="check-circle" class="w-8 h-8"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Pilot Validation</h3>
+                    <p class="text-sm text-gray-500 mb-4">Real-world usage</p>
+                    <div class="space-y-2">
+                        <p class="text-sm font-medium">Outcome:</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Confirmed users could complete tasks without needing clarification</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 p-4 bg-yellow-50 dark:bg-yellow-900/10 rounded-lg border border-yellow-100 dark:border-yellow-900/30">
+                <p class="text-sm text-yellow-800 dark:text-yellow-200"><strong>Research Constraints:</strong> Limited participant access, Capstone timeline, Small business data limitations. (Prioritized high-signal insights over large sample size)</p>
+            </div>
+        </section>
+
+        <!-- 5. Synthesis Process -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Synthesis Process</h2>
+            <p class="text-xl font-bold mb-10">User friction occurred at three predictable stages in the decision journey.</p>
+
+            <p class="text-lg font-semibold mb-6">Breakdown stages:</p>
+
+            <div class="flex flex-col md:flex-row gap-4 items-stretch justify-between">
+                <div class="flex-1 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl w-full flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 text-purple-700 dark:text-purple-400">1. Value Assessment: “Is this worth it?”</h3>
+                    <div class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+                        <p class="mb-2">Users struggled to:</p>
+                        <ul class="list-disc pl-5 mb-2">
+                            <li>locate pricing</li>
+                            <li>compare service options</li>
+                        </ul>
+                        <p>This made it difficult to determine whether the service aligned with their expectations and budget.</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 dark:text-gray-100 pt-4 border-t border-gray-200 dark:border-gray-700 mt-auto">If users couldn't quickly assess value, they hesitated before moving forward.</p>
+                </div>
+                <div class="hidden md:flex items-center text-gray-300 dark:text-gray-600"><i data-feather="arrow-right" class="w-6 h-6"></i></div>
+                <div class="md:hidden flex justify-center text-gray-300 dark:text-gray-600"><i data-feather="arrow-down" class="w-6 h-6"></i></div>
+                
+                <div class="flex-1 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl w-full flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 text-purple-700 dark:text-purple-400">2. Trust Formation: “Do I trust this business?”</h3>
+                    <div class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+                        <p>Visual inconsistencies and lack of structure reduced perceived professionalism.</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 dark:text-gray-100 pt-4 border-t border-gray-200 dark:border-gray-700 mt-auto">Users relied on visual clarity and consistency as signals of quality and legitimacy.</p>
+                </div>
+                <div class="hidden md:flex items-center text-gray-300 dark:text-gray-600"><i data-feather="arrow-right" class="w-6 h-6"></i></div>
+                <div class="md:hidden flex justify-center text-gray-300 dark:text-gray-600"><i data-feather="arrow-down" class="w-6 h-6"></i></div>
+
+                <div class="flex-1 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl w-full flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 text-purple-700 dark:text-purple-400">3. Action Clarity: “What do I do next?”</h3>
+                    <div class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
+                        <p>Unclear next steps and booking pathways interrupted momentum.</p>
+                    </div>
+                    <p class="text-sm font-medium text-gray-900 dark:text-gray-100 pt-4 border-t border-gray-200 dark:border-gray-700 mt-auto">Even when users were interested, they paused or dropped off without clear direction.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Key Findings -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Key Findings</h2>
+            <p class="text-xl font-bold mb-10">Here's why users hesitate and don't convert.</p>
+            
+            <div class="space-y-8">
+                <!-- Finding 1 -->
+                <div class="bg-white dark:bg-gray-900 finding-border p-6 md:p-8 shadow-sm rounded-r-xl">
+                    <h3 class="text-xl font-bold mb-4">Finding 1: Users use pricing and layout to judge quality</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">What I observed</h4>
+                            <ul class="list-disc pl-4 text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Several users asked "Do you have a price list?" even after browsing</li>
+                                <li>One user paused and said they would "probably just message the business" instead of continuing</li>
+                                <li>Visual inconsistencies made the site feel less professional</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-purple-600 dark:text-purple-400 mb-2">What this means</h4>
+                            <p class="text-gray-600 dark:text-gray-300 font-medium">Users rely on pricing visibility and visual clarity as quick signals of legitimacy and quality.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Why It Matters</h4>
+                            <p class="text-gray-600 dark:text-gray-300">If users can't quickly find pricing or trust the presentation, they hesitate even when interested.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finding 2 -->
+                <div class="bg-white dark:bg-gray-900 finding-border p-6 md:p-8 shadow-sm rounded-r-xl">
+                    <h3 class="text-xl font-bold mb-4">Finding 2: Unclear services slow down decision-making.</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">What I observed</h4>
+                            <ul class="list-disc pl-4 text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Users struggled to distinguish between catering, grazing tables, and XL boards</li>
+                                <li>Users spent more time comparing options before selecting</li>
+                                <li>Conversations showed uncertainty about which service fit their needs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-purple-600 dark:text-purple-400 mb-2">What this means</h4>
+                            <p class="text-gray-600 dark:text-gray-300 font-medium">When service options aren't clearly differentiated, it forces users to stop and figure out the differences themselves.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Why it matters</h4>
+                            <p class="text-gray-600 dark:text-gray-300">This extra effort slows decisions and increases the chance users give up.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Finding 3 -->
+                <div class="bg-white dark:bg-gray-900 finding-border p-6 md:p-8 shadow-sm rounded-r-xl">
+                    <h3 class="text-xl font-bold mb-4">Finding 3: Users lose momentum without clear next steps</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">What I observed</h4>
+                            <ul class="list-disc pl-4 text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Booking pathways were not immediately visible or intuitive</li>
+                                <li>Users frequently paused or exited the flow instead of choosing a next step</li>
+                                <li>Some users reached out instead of completing the flow</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-purple-600 dark:text-purple-400 mb-2">What this means</h4>
+                            <p class="text-gray-600 dark:text-gray-300 font-medium">Even after deciding, users require immediate direction. Without it, momentum is lost.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">Why it matters</h4>
+                            <p class="text-gray-600 dark:text-gray-300">Interruptions at this stage prevent users from converting, even when purchase intent is high. Without clear next steps, users drop off at the final stage of decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Insight -> Design Translation -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Insight → Design</h2>
+            <p class="text-2xl font-bold mb-8 text-purple-600 dark:text-purple-400">Users decide within seconds whether to stay or leave.</p>
+
+            <div class="bg-purple-900 text-white rounded-2xl p-8 md:p-12 mb-12">
+                <div class="max-w-3xl">
+                    <h3 class="text-purple-200 uppercase tracking-widest text-sm font-bold mb-4">Core Insight</h3>
+                    <p class="text-2xl md:text-3xl font-light leading-snug">
+                        Within the first <span class="font-bold text-white">10 seconds</span>, users must be able to understand:
+                        <br>
+                        • What the business offers
+                        <br>
+                        • How services differ
+                        <br>
+                        • Where to find pricing (or how much it costs)
+                        <br>
+                        • How to move forward
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-lg font-bold mb-6">How this shaped design:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Design Decisions</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check" class="text-green-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <span class="font-bold block">Structured product distinctions</span>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Clearly separated catering, grazing tables, and board options to reduce comparison effort and help users quickly identify the right service.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check" class="text-green-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <span class="font-bold block">Simplified and guided navigation pathways</span>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Made next steps visible and intuitive, allowing users to move from browsing to booking without hesitation.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check" class="text-green-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <span class="font-bold block">Unified visual system</span>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Applied consistent typography, layout, and spacing to reinforce professionalism and build immediate trust.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-feather="check" class="text-green-500 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <span class="font-bold block">Content reduction and prioritization</span>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Removed non-essential information to surface key decision-making content (pricing, services, and next steps being within initial view.)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl flex items-center justify-center">
+                    <div class="text-center">
+                        <i data-feather="pen-tool" class="w-10 h-10 mx-auto mb-4 text-gray-400"></i>
+                        <h4 class="font-bold mb-2">Design Philosophy</h4>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 italic">This redesign prioritized decision clarity and cognitive ease, ensuring users could quickly understand, evaluate, and act without unnecessary friction or visual distraction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Validation & Iteration -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Validation & Iteration</h2>
+            <p class="text-xl font-bold mb-6">Design decisions were refined through rapid testing focused on key user tasks.</p>
+            <p class="text-gray-600 dark:text-gray-300 mb-10">Each iteration targeted moments where users hesitated—improving how quickly they could find pricing, choose a service, and understand next steps.</p>
+
+            <!-- Iterations Timeline -->
+            <div class="space-y-12 mb-16">
+                <!-- Phase 1: Identifying & Reducing Friction -->
+                <div class="relative pl-8 border-l-2 border-purple-100 dark:border-purple-900">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-600"></div>
+                    <h3 class="text-xl font-bold mb-4 text-red-600">Phase 1 — Identifying & Reducing Friction</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">What happened</h4>
+                            <ul class="list-disc pl-4 text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Users couldn’t quickly find pricing or differentiate between service types.</li>
+                                <li>Pricing improved, but service comparison remained slow due to visual overload.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-purple-600 dark:text-purple-400 mb-2">Tactical Changes</h4>
+                            <ul class="list-disc pl-4 text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Moved pricing higher in the layout and introduced clearer service groupings.</li>
+                                <li>Strengthened visual hierarchy and reduced competing content to focus attention on key decisions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 2: Final Validation -->
+                <div class="relative pl-8 border-l-2 border-purple-100 dark:border-purple-900">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-600"></div>
+                    <h3 class="text-xl font-bold mb-4 text-green-600">Phase 2 — Final Validation</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xs font-bold uppercase text-gray-400 mb-2">What happened</h4>
+                            <ul class="list-disc pl-4 text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                                <li>Users moved quickly through tasks</li>
+                                <li>Users stopped asking clarification questions</li>
+                                <li>Decisions felt more immediate and confident</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iteration Image Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-zoom-in" onclick="openLightbox('/components/pics/iteration-1.webp')">
+                    <img src="/components/pics/iteration-1.webp" alt="Low-fidelity Wireframes" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i data-feather="maximize" class="text-white"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-zoom-in" onclick="openLightbox('/components/pics/iteration-2.webp')">
+                    <img src="/components/pics/iteration-2.webp" alt="Mid-fidelity Prototype" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i data-feather="maximize" class="text-white"></i>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800 cursor-zoom-in" onclick="openLightbox('/components/pics/iteration-3.webp')">
+                    <img src="/components/pics/iteration-3.webp" alt="High-fidelity UI" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <i data-feather="maximize" class="text-white"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Validated Outcomes Section -->
+            <h3 class="text-2xl font-bold mb-8 text-center">Validated Outcomes</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-12">
+                <div class="p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-gray-50 dark:bg-gray-900/30">
+                    <i data-feather="search" class="w-8 h-8 mx-auto text-purple-600 mb-4"></i>
+                    <p class="font-bold mb-1">Effortless Search</p>
+                    <p class="text-sm text-gray-500">Users located pricing with minimal searching</p>
+                    
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-gray-50 dark:bg-gray-900/30">
+                    <i data-feather="zap" class="w-8 h-8 mx-auto text-purple-600 mb-4"></i>
+                    <p class="font-bold mb-1">Efficient Selection</p>
+                    <p class="text-sm text-gray-500">Users selected services with reduced comparison time</p>
+                    
+                </div>
+                <div class="p-6 border border-gray-100 dark:border-gray-800 rounded-xl bg-gray-50 dark:bg-gray-900/30">
+                    <i data-feather="check-circle" class="w-8 h-8 mx-auto text-purple-600 mb-4"></i>
+                    <p class="font-bold mb-1">Inherent Trust</p>
+                    <p class="text-sm text-gray-500">Users proceeded without needing clarification</p>
+                    
+                </div>
+            </div>
+
+            <div class="p-8 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-100 dark:border-green-900/30 text-center">
+                <h4 class="font-bold text-lg mb-2 text-green-800 dark:text-green-200">Key takeaway</h4>
+                <p class="text-green-800 dark:text-green-200 leading-relaxed">
+                    When critical information was surfaced early and clearly, users stopped hesitating and started deciding. In earlier iterations, users paused to search or asked clarifying questions—by the final iteration, they completed tasks without stopping.
+                </p>
+            </div>
+        </section>
+
+        <!-- 9. Impact -->
+        <section class="mb-24">
+            <h2 class="text-3xl font-bold mb-4">Impact</h2>
+            <p class="text-xl font-bold mb-10">The redesign shifted the experience from effortful to intuitive decision-making.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-2">Reduced reliance on manual customer support</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Users no longer needed to ask common clarification questions (e.g., pricing, service differences), decreasing dependency on DMs and email inquiries.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-2">Faster path from interest to decision</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">By surfacing key information earlier, users were able to move from browsing to selecting a service without interruption or backtracking.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-2">Improved decision confidence</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Clear service distinctions and structured content allowed users to choose options without second-guessing or extended comparison.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-2">Stronger perceived brand credibility</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">A consistent visual system eliminated early trust concerns, aligning the experience with expectations of a premium service.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700 md:col-span-2">
+                    <h3 class="font-bold text-lg mb-2">Foundation for scalable growth</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">The structured experience supports additional services and expansion without increasing user confusion or decision complexity.</p>
+                </div>
+            </div>
+
+            <!-- Summary Table: From Insight → Outcome -->
+            <div class="bg-purple-50 dark:bg-purple-900/10 rounded-2xl overflow-hidden border border-purple-100 dark:border-purple-900/30 p-8">
+                <h3 class="text-purple-700 dark:text-purple-300 font-bold mb-8 uppercase tracking-wider text-sm">From Insight → Outcome</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex flex-col">
+                        <p class="font-bold text-gray-900 dark:text-gray-100 mb-1">Unclear pricing</p>
+                        <span class="text-gray-400 mb-1">→ surfaced pricing</span>
+                        <span class="font-bold text-green-600 dark:text-green-400">→ faster value assessment</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-gray-900 dark:text-gray-100 mb-1">Confusing services</p>
+                        <span class="text-gray-400 mb-1">→ structured distinctions</span>
+                        <span class="font-bold text-green-600 dark:text-green-400">→ quicker, more confident selection</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-gray-900 dark:text-gray-100 mb-1">Hidden next steps</p>
+                        <span class="text-gray-400 mb-1">→ guided pathways</span>
+                        <span class="font-bold text-green-600 dark:text-green-400">→ smoother conversion flow</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-gray-900 dark:text-gray-100 mb-1">Visual inconsistency</p>
+                        <span class="text-gray-400 mb-1">→ unified system</span>
+                        <span class="font-bold text-green-600 dark:text-green-400">→ increased trust and credibility</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Reflection -->
+        <section class="mb-24 border-t border-gray-200 dark:border-gray-800 pt-12">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-2xl font-bold mb-4">Reflection</h2>
+                <p class="text-xl font-bold mb-6">Focusing on behavior over interface.</p>
+                <div class="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p class="text-sm">
+                        Effective UX isn't just providing information; it's about supporting evaluation and commitment. This project strengthened my ability to identify patterns and act on behavioral data.
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                        <p class="font-bold mb-2">Next Steps:</p>
+                        <ul class="text-xs list-disc pl-4 space-y-1">
+                            <li>Validate with larger sample size</li>
+                            <li>Introduce measurable usability metrics</li>
+                            <li>Formalize synthesis via affinity mapping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex justify-center">
+            <a href="/portfolio.html" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg font-medium transition-colors flex items-center gap-2">
+                <i data-feather="arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </main>
+
+    <custom-footer></custom-footer>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[2000] hidden bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors" aria-label="Close">
+            <i data-feather="x" class="w-8 h-8"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged iteration view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <script>
+        feather.replace();
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    </script>
+</body>
+</html>

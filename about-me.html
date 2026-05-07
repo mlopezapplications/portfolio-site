@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Lopez - UX and Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-['Inter'] transition-colors duration-300">
+    
+    <custom-header></custom-header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Hero Intro -->
+        <section class="mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Max Lopez</h1>
+            <p class="text-xl md:text-2xl font-semibold text-blue-600 dark:text-blue-400 mb-4">
+                UX Researcher & Designer focused on reducing decision friction in digital experiences.
+            </p>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl">
+                I help businesses turn confusion into clarity. Guiding users to move from browsing to confident action without hesitation.
+            </p>
+        </section>
+
+        <!-- Core About Me -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">What I Solve</h2>
+            <div class="max-w-3xl text-lg space-y-6">
+                <p>I’m a UX researcher and designer with a focus on how people make decisions online.</p>
+                <p class="font-medium italic border-l-4 border-blue-600 pl-4 py-2 bg-blue-50 dark:bg-blue-900/20">
+                    My work centers on one question: “What's stopping users from moving forward?”
+                </p>
+                <p>
+                    Through research, testing, and iteration, I identify where trust breaks down, where information gets lost, and where users hesitate and I design solutions that remove those barriers.
+                </p>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl">
+                    <p class="font-bold mb-2">In my recent work with a local catering business, I helped restructure their website experience to:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Make pricing easier to find</li>
+                        <li>Clarify service options</li>
+                        <li>Reduce the need for back-and-forth communication</li>
+                    </ul>
+                    <p class="mt-4 font-medium text-blue-600 dark:text-blue-400">The result: faster decisions, stronger trust, and a smoother path to booking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Section -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">How I Approach Design</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+                    <h3 class="font-bold mb-3 text-blue-600 dark:text-blue-400">Clarity over complexity</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">If users have to think too hard, something's wrong.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+                    <h3 class="font-bold mb-3 text-blue-600 dark:text-blue-400">Research before assumptions</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Decisions are backed by real user behavior.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+                    <h3 class="font-bold mb-3 text-blue-600 dark:text-blue-400">Trust is designed</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">Visual polish + clear information = credibility.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+                    <h3 class="font-bold mb-3 text-blue-600 dark:text-blue-400">Iteration is the work</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">The first version is just the starting point.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Edge -->
+        <section class="mb-24 max-w-3xl">
+            <h2 class="text-2xl font-bold mb-6 italic">Beyond the Design</h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300">
+                Outside of design, I'm someone who values growth, self-awareness, and showing up consistently. I don't just aim for good design, I aim for meaningful improvement.
+            </p>
+        </section>
+
+      
+        <!-- Contact Section -->
+        <section class="contact mb-16" id="contact">
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-6">Let's build something people can trust.</h2>
+                <p class="text-center mb-6">
+                    If you're looking to improve how users experience and interact with your product, I'd love to connect.
+                </p>
+                <div class="flex justify-center">
+                    <a href="contact.html" class="action-button mt-6 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-300">
+                        Reach Out Now
+                    </a>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>feather.replace();</script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>

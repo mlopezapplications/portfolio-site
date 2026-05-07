@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN Customer Journey | Max Lopez</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-['Inter'] transition-colors duration-300">
+    
+    <custom-header></custom-header>
+    
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Project Header -->
+        <section class="mb-12">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2">Optimizing the Checkout Experience for SHEIN</h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300">A case study focused on reducing friction in the checkout process</p>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">UX Research</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">Checkout Optimization</span>
+                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full">A/B Testing</span>
+                </div>
+            </div>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 mb-8">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                    <div>
+                        <p class="font-medium">By Max Lopez</p>
+                        <p class="text-gray-600 dark:text-gray-300">GIT 435 – Prof. Hopkins</p>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">April 28, 2025</p>
+                </div>
+            </div>
+            <img src="/components/pics/thumbnail-3.png" alt="SHEIN checkout process" class="w-full rounded-xl shadow-lg mb-8">
+        </section>
+        <!-- Business Overview -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Business Overview</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Business Name</h3>
+                        <p>SHEIN</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Industry</h3>
+                        <p>E-commerce</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Products</h3>
+                        <p>Clothing, Home Goods, Appliances</p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold mb-4">Checkout Importance</h3>
+                    <p>The checkout process is essential to SHEIN's business. As a fully online marketplace, any friction during this stage directly impacts sales and customer satisfaction. A seamless, user-friendly checkout is vital for maximizing conversions, minimizing cart abandonment, and staying competitive in a fast-paced online retail space.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Persona -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Target Persona</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                    <img src="/components/pics/persona.webp" alt="Alina Soler" class="w-48 h-48 rounded-full object-cover shadow-md">
+                    <div class="flex-1">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h3 class="font-medium">Name</h3>
+                                <p>Alina Soler</p>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Age</h3>
+                                <p>22</p>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Occupation</h3>
+                                <p>College student, part-time waitress</p>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Monthly Budget</h3>
+                                <p>$1,200</p>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="font-medium mb-2">Shopping Habits</h3>
+                            <p>Loves online shopping, often preparing for job interviews or life events.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-2">Frustrations</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span>Uncertain shipping timelines</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span>Forced account creation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                                    <span>Doubts about sizing and product quality</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p>Alina is time-conscious and driven. She needs fast, low-stress checkout experiences especially when purchasing items for important events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Checkout Flow -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Current Checkout Flow Overview</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-8">
+                <h3 class="text-xl font-semibold mb-4">Steps in SHEIN's Checkout:</h3>
+                <ol class="list-decimal pl-6 space-y-2 mb-6">
+                    <li>User browses and adds items to cart.</li>
+                    <li>Product reviews and user images help with decisions.</li>
+                    <li>Account creation is required at checkout.</li>
+                    <li>After purchase, confirmation is emailed.</li>
+                    <li>Delivery estimates are vague; tracking is limited.</li>
+                </ol>
+                
+                <h3 class="text-xl font-semibold mb-4">Pain Points:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+                        <h4 class="font-medium mb-2">No Guest Checkout</h4>
+                        <p>First-time users must create an account.</p>
+                    </div>
+                    <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+                        <h4 class="font-medium mb-2">Delivery Uncertainty</h4>
+                        <p>Vague shipping timelines and poor tracking.</p>
+                    </div>
+                    <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+                        <h4 class="font-medium mb-2">Visual Overload</h4>
+                        <p>Distracting promotions, inconsistent fonts, and lack of design cohesion reduce user trust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Identified UX Issues -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Identified UX Issues</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">1. No Guest Checkout Option</h3>
+                    <p>First-time buyers like Alina are forced to create an account, which adds friction and discourages trial purchases.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">2. Vague Delivery Timelines</h3>
+                    <p>Unclear estimates (e.g., "Arrives between May 5 - May 13") leave users anxious, especially when timing is critical.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4">3. Inconsistent Design</h3>
+                    <p>Mismatched fonts and cluttered visuals (like aggressive promotions) create a lack of trust in the brand's reliability.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proposed UX Improvements -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Proposed UX Improvements</h2>
+            
+            <div class="space-y-8">
+                <!-- Improvement 1 -->
+                <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">1. Guest Checkout Option</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-medium mb-1">Problem</h4>
+                                    <p>Account creation is a barrier for new users.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Solution</h4>
+                                    <p>Add a prominent "Checkout as Guest" button.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Benefit</h4>
+                                    <p>Reduces drop-off by allowing users to test the platform without commitment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-gray-500 text-center">Before</span>
+                                <img src="/components/pics/SHEIN-PICS/shein checkout right side.JPG" alt="Before: No guest checkout" class="w-full rounded-lg shadow-md border border-gray-200 dark:border-gray-700 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400 text-center">After</span>
+                                <img src="/components/pics/SHEIN-PICS/shein right side adjusted.jpg" alt="After: Guest checkout added" class="w-full rounded-lg shadow-md border-2 border-blue-500 dark:border-blue-400 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Improvement 2 -->
+                <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-2xl font-bold mb-4">2. Improved Delivery Estimate Visibility</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-medium mb-1">Problem</h4>
+                                    <p>Unclear shipping info causes anxiety.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Solution</h4>
+                                    <p>Add a "View Full Shipping Timeline" option.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Benefit</h4>
+                                    <p>Builds trust and sets expectations, especially for time-sensitive orders.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 order-1 md:order-2">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-gray-500 text-center">Before</span>
+                                <img src="/components/pics/SHEIN-PICS/shein checkout left side.JPG" alt="Before: Vague shipping timeline" class="w-full rounded-lg shadow-md border border-gray-200 dark:border-gray-700 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400 text-center">After</span>
+                                <img src="/components/pics/SHEIN-PICS/shein shipping ADJUSTED.jpg" alt="After: Clear shipping timeline" class="w-full rounded-lg shadow-md border-2 border-blue-500 dark:border-blue-400 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Improvement 3 -->
+                <div class="bg-blue-50 dark:bg-blue-900/30 rounded-xl p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">3. Design Consistency and Simplified UI</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-medium mb-1">Problem</h4>
+                                    <p>Visual clutter reduces credibility.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Solution</h4>
+                                    <p>Limit font usage and adjust promo placement.</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Result</h4>
+                                    <p>Improved credibility and reduced distraction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-gray-500 text-center">Before</span>
+                                <img src="/components/pics/SHEIN-PICS/shein ui original.jpg" alt="Before: Cluttered UI" class="w-full rounded-lg shadow-md border border-gray-200 dark:border-gray-700 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-xs font-bold uppercase text-blue-600 dark:text-blue-400 text-center">After</span>
+                                <img src="/components/pics/SHEIN-PICS/shein simplified ui.jpg" alt="After: Simplified UI" class="w-full rounded-lg shadow-md border-2 border-blue-500 dark:border-blue-400 cursor-zoom-in" onclick="openLightbox(this.src)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mt-8">
+                <h3 class="text-xl font-semibold mb-4">User Impact</h3>
+                <p>These changes create a more trustworthy and efficient checkout process, making it ideal for busy, budget-minded shoppers like Alina.</p>
+            </div>
+        </section>
+        <!-- A/B Testing Plan -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">A/B Testing Plan</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Test Setup</h3>
+                        <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg mb-4">
+                            <h4 class="font-medium mb-2">Version A (Control)</h4>
+                            <p>Current checkout flow</p>
+                        </div>
+                        <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                            <h4 class="font-medium mb-2">Version B (Variant)</h4>
+                            <p>Includes guest checkout, timeline visibility, and refined UI</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">User Split</h3>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-gray-200 dark:bg-gray-700 w-1/2 h-12 rounded-lg flex items-center justify-center">
+                                50% Control
+                            </div>
+                            <div class="bg-green-200 dark:bg-green-800 w-1/2 h-12 rounded-lg flex items-center justify-center">
+                                50% Variant
+                            </div>
+                        </div>
+                        <p class="mt-4">Test Duration: 2 weeks (SHEIN's high traffic allows for fast data collection)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold mb-4">KPIs (Key Performance Indicators)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-xl">
+                    <h4 class="text-xl font-semibold mb-3">Revenue</h4>
+                    <p>Compare total sales generated by Control vs. Variant.</p>
+                </div>
+                <div class="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-xl">
+                    <h4 class="text-xl font-semibold mb-3">Checkout Conversion Rate</h4>
+                    <p>% of users who complete a purchase after adding to cart.</p>
+                </div>
+                <div class="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-xl">
+                    <h4 class="text-xl font-semibold mb-3">Cart Abandonment Rate</h4>
+                    <p>% of users who add items but leave without checking out.</p>
+                    <p class="mt-2 font-medium">Goal: Lower abandonment in the Variant group.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                <h3 class="text-xl font-semibold mb-4">Why These KPIs?</h3>
+                <p>Together, they measure trust, usability, and overall checkout success.</p>
+            </div>
+        </section>
+
+        <!-- Persona Impact -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Persona Impact: Alina Soler</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <img src="/components/pics/persona.webp" alt="Alina Soler" class="w-32 h-32 rounded-full object-cover shadow-md">
+                    <div class="flex-1">
+                        <p class="mb-6">The proposed changes directly address Alina's needs:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-green-100 dark:bg-green-900 rounded-full p-2 flex-shrink-0">
+                                    <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Guest Checkout</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Reduces friction for new users.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-green-100 dark:bg-green-900 rounded-full p-2 flex-shrink-0">
+                                    <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Shipping Confidence</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Clear delivery info aligns with her planning habits.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="bg-green-100 dark:bg-green-900 rounded-full p-2 flex-shrink-0">
+                                    <i data-feather="check" class="w-5 h-5 text-green-600 dark:text-green-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Streamlined Design</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Helps her focus and complete purchases quickly.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p>For a shopper like Alina, these updates create a stress-free, trial-friendly shopping experience likely increasing conversion and long-term loyalty.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Comparison -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Side-by-Side Visual Comparison</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center">Current (A)</h3>
+                    <img src="/components/pics/SHEIN-PICS/shein checkout-original.JPG" alt="Current checkout" class="w-full rounded-lg shadow-md mb-4 cursor-zoom-in" onclick="openLightbox(this.src)">
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                            <span>No guest checkout</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                            <span>Confusing delivery details</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="x" class="w-5 h-5 text-red-500 mt-1 flex-shrink-0"></i>
+                            <span>Cluttered design</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold mb-4 text-center">Improved (B)</h3>
+                    <img src="/components/pics/SHEIN-PICS/shein checkout adjusted whole.jpg" alt="Improved checkout" class="w-full rounded-lg shadow-md mb-4 cursor-zoom-in" onclick="openLightbox(this.src)">
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
+                            <span>Guest checkout available</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
+                            <span>"View Full Shipping Timeline" button</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="check" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
+                            <span>Clean, consistent UI</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Conclusion -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-6">Conclusion & Next Steps</h2>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8">
+                <h3 class="text-xl font-semibold mb-4">Key Takeaway</h3>
+                <p class="mb-6">Reducing friction through guest checkout, improving delivery visibility, and refining the UI can meaningfully increase conversions and trust for first-time buyers.</p>
+                
+                <h3 class="text-xl font-semibold mb-4">Future Ideas</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2">
+                        <i data-feather="chevron-right" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                        <span>Personalized delivery estimate based on zip code</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i data-feather="chevron-right" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                        <span>User satisfaction score post-purchase</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i data-feather="chevron-right" class="w-5 h-5 text-blue-600 dark:text-blue-300 mt-1 flex-shrink-0"></i>
+                        <span>Optional SMS updates for shipping</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<div class="flex justify-center">
+            <a href="/portfolio.html" class="px-6 py-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg font-medium transition-colors flex items-center gap-2">
+                <i data-feather="arrow-left"></i>
+                Back to Portfolio
+            </a>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[2000] hidden bg-black/95 flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors" aria-label="Close">
+            <i data-feather="x" class="w-8 h-8"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged view" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+    </div>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script>
+        feather.replace();
+
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling while open
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    </script>
+</body>
+</html>
